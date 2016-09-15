@@ -1,5 +1,5 @@
 node {
     git url: "https://github.com/shrekze/samplewebapp.git"
-    
-    sh "mvn clean package"
+    def mvn = tool 'M3'
+    sh "${mvn}/bin/mvn clean package"
 }

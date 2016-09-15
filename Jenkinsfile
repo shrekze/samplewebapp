@@ -10,6 +10,5 @@ node {
     git url: "https://github.com/shrekze/samplewebapp.git"
     
     flow.provision(sampleapp)
-    flow.buildTests(serviceName, registryIpPort)
     flow.buildService(serviceName, registryIpPort)
 }
